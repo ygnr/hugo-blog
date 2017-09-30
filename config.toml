@@ -1,3 +1,18 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "http://gokulnathreddy.com/" 
+languageCode = "en-us" 
+title = "Gokulnath" 
+[params] 
+  description = "Gokulnath's Website" 
+  author = "Gokulnath Reddy" 
+  authorDescription = "Hi! I'm Gokulnath and I'm a Software Engineer, mostly working on blockchain related projects. I have graduated from IIT Patna." 
+  authorImage = "authorImage.jpg"
+  siteDescriptors = ["blog", "software", "blockchain", "programming", "ethereum", "Gokulnath Reddy", "Gokulnath", "Reddy"] 
+  authorTwitter = "GokulnathReddy" 
+  authorFacebook = "gokulnathreddy.y" 
+  authorGithub = "ygnr" 
+  authorLinkedin = "gokulnathreddy" 
+  authorSignature = "Gokul" 
+[permalinks] 
+[taxonomies] 
+  tag = "tags" 
+  category = "categories"
