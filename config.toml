@@ -3,8 +3,10 @@ languageCode = "en-us"
 title = "Gokulnath" 
 [params] 
   description = "Gokulnath's Website" 
-  author = "Gokulnath Reddy" 
-  authorDescription = "Hi! I'm Gokulnath and I'm a Software Engineer, mostly working on blockchain related projects. I have graduated from IIT Patna." 
+  author = "Gokulnath Reddy"
+  authorTitle = 'Software Engineer' 
+  authorDescription = "Hi! I'm Gokulnath and I'm a Software Engineer, mostly working on blockchain related projects. I have graduated from IIT Patna."
+  authorInterests = "Blockchain | Cryptography | Crypto Currencies | Web Development" 
   authorImage = "authorImage.jpg"
   siteDescriptors = ["blog", "software", "blockchain", "programming", "ethereum", "Gokulnath Reddy", "Gokulnath", "Reddy"] 
   authorTwitter = "GokulnathReddy" 

@@ -1,48 +1,22 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <title>{{ .Site.Title }}</title>
-  <meta name="copyright" content="&copy; Copyright 2017 to Present"/>
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ .Site.Params.authorDescription }}"/>
-  <meta name="keywords" content="{{ delimit .Site.Params.siteDescriptors ", " }}">
-  <meta name="author" content="{{ .Site.Params.author }}">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="cleartype" content="on">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="/css/custom.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/favicons/manifest.json">
-  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/favicons/favicon.ico">
-  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-
-</head>
+{{ partial "meta.html" . }}
 <body>
   <div class="container">
     <div class="row header">
-      <img src="images/authorImage.jpg" alt="Gokulnath" class="rounded-circle author-image">
+      <img src="images/authorImage.jpg" alt="author-image" class="rounded-circle author-image">
     </div>
-    <h2 class="text-center">Gokulnath Reddy</h2>
+    <h1 class="text-center author-name">{{ .Site.Params.author }}</h1>
+    <h3 class="text-center author-title">{{ .Site.Params.authorTitle }}</h3>
+    <h4 class="text-center author-interests">{{ .Site.Params.authorInterests }}</h4>
+    
+    <div class="text-center author-links">
+      <a href="">
+        About
+      </a>
+      <a href="">
+        Blog
+      </a>
+    </div>
+    {{ partial "footer.html" . }}
   </div>
 </body>
 </html>
