@@ -1,3 +1,4 @@
 [submodule "public"]
 	path = public
 	url = git@github.com:ygnr/ygnr.github.io.git
+	branch = master
